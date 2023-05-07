@@ -109,6 +109,24 @@
             #binding-cells = <0>;
             bindings = <&kp N1 &kp N8 &kp NUMBER_6 &kp NUMBER_0 &kp NUMBER_5 &kp NUMBER_0 &kp NUMBER_9 &kp NUMBER_0 &kp NUMBER_5 &kp NUMBER_0 &kp NUMBER_3>;
         };
+        mail_me: mail_me {
+            compatible = "zmk,behavior-macro";
+            label = "MAIL_ME";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp P &kp R &kp O &kp P &kp H &kp E &kp C &kp Y &kp AT_SIGN &kp M &kp E &kp DOT &kp C &kp O &kp M>;
+        };
+        mail_live: mail_live {
+            compatible = "zmk,behavior-macro";
+            label = "MAIL_LIVE";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp P &kp R &kp O &kp P &kp H &kp E &kp C &kp Y &kp AT &kp L &kp I &kp V &kp E &kp DOT &kp C &kp O &kp M>;
+        };
+        my_name: my_name {
+            compatible = "zmk,behavior-macro";
+            label = "MY_NAME";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp P &kp R &kp NUMBER_1 &kp N &kp C &kp E &kp S &kp S>;
+        };
     };
 
     keymap {
@@ -141,10 +159,10 @@
         symbol {
             label = "SYMBOL";
             bindings = <
-&kp EXCL     &kp AT  &kp HASH           &kp DLLR     &kp PRCNT    &kp CARET       &kp AMPS        &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
- &kp TAB  &kp LA(A)     &none            &kp SQT     &kp GRAVE    &kp MINUS      &kp EQUAL        &kp LBKT     &kp RIGHT_BRACKET               &kp PIPE
-   &none      &none     &none  &kp DOUBLE_QUOTES     &kp TILDE    &kp UNDER       &kp PLUS  &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp BSLH
-                       &trans              &mo 3  &kp LEFT_ALT      &kp DEL  &kp BACKSPACE          &trans
+  &kp EXCL     &kp AT   &kp HASH           &kp DLLR     &kp PRCNT    &kp CARET       &kp AMPS        &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+   &kp TAB  &kp LA(A)  &my_phone            &kp SQT     &kp GRAVE    &kp MINUS      &kp EQUAL        &kp LBKT     &kp RIGHT_BRACKET               &kp PIPE
+&mail_live   &mail_me   &my_name  &kp DOUBLE_QUOTES     &kp TILDE    &kp UNDER       &kp PLUS  &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp BSLH
+                          &trans              &mo 3  &kp LEFT_ALT      &kp DEL  &kp BACKSPACE          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
