@@ -106,10 +106,10 @@
         number {
             label = "NUMBER";
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4    &kp N5      &kp N6    &kp N7     &kp N8     &kp N9   &kp N0
-&kp F1  &kp F2  &kp F3  &kp F4    &kp F5    &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT  &kp F11
-&kp F6  &kp F7  &kp F8  &kp F9   &kp F10    &kp HOME   &kp END  &kp PG_UP  &kp PG_DN  &kp F12
-                &trans  &trans  &kp CAPS     &kp DEL     &mo 3     &trans
+  &kp N1  &kp NUMBER_2    &kp N3     &kp N4     &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9     &kp N0
+&kp HOME      &kp LEFT    &kp UP  &kp RIGHT  &kp PG_UP       &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL
+  &kp F4       &kp F12  &kp DOWN    &kp END  &kp PG_DN        &kp PLUS  &kp N1  &kp N2  &kp N3   &kp STAR
+                          &trans     &trans   &kp CAPS         &kp DEL   &mo 3  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
@@ -119,8 +119,8 @@
             label = "SYMBOL";
             bindings = <
 &kp EXCL  &kp AT  &kp HASH           &kp DLLR     &kp PRCNT    &kp CARET       &kp AMPS        &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
- &kp TAB   &none     &none            &kp SQT     &kp GRAVE    &kp MINUS      &kp EQUAL        &kp LBKT     &kp RIGHT_BRACKET               &kp BSLH
-   &none   &none     &none  &kp DOUBLE_QUOTES     &kp TILDE    &kp UNDER       &kp PLUS  &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
+ &kp TAB   &none     &none            &kp SQT     &kp GRAVE    &kp MINUS      &kp EQUAL        &kp LBKT     &kp RIGHT_BRACKET               &kp PIPE
+   &none   &none     &none  &kp DOUBLE_QUOTES     &kp TILDE    &kp UNDER       &kp PLUS  &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp BSLH
                     &trans              &mo 3  &kp LEFT_ALT      &kp DEL  &kp BACKSPACE          &trans
             >;
 
