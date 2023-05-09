@@ -99,6 +99,7 @@
         pipe {
             bindings = <&kp PIPE>;
             key-positions = <14 24>;
+            timeout-ms = <50>;
         };
     };
 
