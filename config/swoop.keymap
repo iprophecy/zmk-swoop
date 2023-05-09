@@ -150,7 +150,7 @@
             bindings = <
   &kp N1  &kp NUMBER_2    &kp N3     &kp N4     &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9     &kp N0
 &kp HOME      &kp LEFT    &kp UP  &kp RIGHT  &kp PG_UP       &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL
-  &kp F5       &kp F12  &kp DOWN    &kp END  &kp PG_DN        &kp PLUS  &kp N1  &kp N2  &kp N3   &kp STAR
+ &kp END         &none  &kp DOWN      &none  &kp PG_DN        &kp PLUS  &kp N1  &kp N2  &kp N3   &kp STAR
                           &trans     &trans   &kp CAPS         &kp DEL   &mo 3  &trans
             >;
 
