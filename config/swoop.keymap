@@ -114,25 +114,25 @@
             compatible = "zmk,behavior-macro";
             label = "MY_PHONE";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp N8 &kp NUMBER_6 &kp NUMBER_0 &kp NUMBER_5 &kp NUMBER_0 &kp NUMBER_9 &kp NUMBER_0 &kp NUMBER_5 &kp NUMBER_0 &kp NUMBER_3>;
+            bindings = <&kp N1 &kp N8 &kp NUMBER_6 &kp STAR &kp STAR &kp STAR &kp STAR &kp NUMBER_0 &kp NUMBER_5 &kp NUMBER_0 &kp NUMBER_3>;
         };
         mail_me: mail_me {
             compatible = "zmk,behavior-macro";
             label = "MAIL_ME";
             #binding-cells = <0>;
-            bindings = <&kp I &kp P &kp R &kp O &kp P &kp H &kp E &kp C &kp Y &kp AT_SIGN &kp M &kp E &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp I &kp P &kp R &kp O &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp AT_SIGN &kp STAR &kp E &kp DOT &kp C &kp O &kp M>;
         };
         mail_live: mail_live {
             compatible = "zmk,behavior-macro";
             label = "MAIL_LIVE";
             #binding-cells = <0>;
-            bindings = <&kp I &kp P &kp R &kp O &kp P &kp H &kp E &kp C &kp Y &kp AT &kp L &kp I &kp V &kp E &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp I &kp P &kp R &kp O &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp AT &kp L &kp I &kp V &kp E &kp DOT &kp C &kp O &kp M>;
         };
         my_name: my_name {
             compatible = "zmk,behavior-macro";
             label = "MY_NAME";
             #binding-cells = <0>;
-            bindings = <&kp I &kp P &kp R &kp NUMBER_1 &kp N &kp C &kp E &kp S &kp S>;
+            bindings = <&kp I &kp P &kp R &kp NUMBER_1 &kp STAR &kp STAR &kp STAR &kp S &kp S>;
         };
     };
 
